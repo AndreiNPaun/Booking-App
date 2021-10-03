@@ -1,0 +1,470 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Andrei's Code*/
+
+* {
+    text-decoration: none;
+}
+
+/*Header - Nav Bar*/
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+}
+
+header .logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #111;
+    font-weight: 900;
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header nav ul {
+	display: block;
+	margin: auto;
+	width: fit-content;
+}
+
+header nav ul li {
+	display: inline;
+	float: left;
+	list-style: none;
+	padding: 0 16px;
+}
+
+header nav ul li a {
+	font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #111;
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+header .login-button {
+    display: block;
+	float: left;
+	list-style: none;
+    font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #111;
+	margin-left: 25vw;
+	margin-bottom: 10px;
+}
+
+header .register-button {
+	display: block;
+	float: left;
+	list-style: none;
+    font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #111;
+	margin-left: 20vw;
+	margin-bottom: 10px;
+}
+
+header .logout-button {
+	display: block;
+	float: left;
+	list-style: none;
+    font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #111;
+	margin-left: 45vw;
+	margin-bottom: 10px;
+}
+
+/* Header Media */
+
+@media only screen and (min-width: 1000px) {
+	header .logo {
+		margin: 25px 0 0 0;
+		text-align: left;
+		padding: 0 20px 0 40px;
+		border-right: 2px solid #111;
+		float: left;
+		line-height: 30px;
+	}
+
+	header nav ul {
+		margin: 10px 0 0 20px;
+		float: left;
+	}
+	
+	header nav ul li a {
+		line-height: 20px;
+	}
+
+	header .login-button {
+		text-align: center;
+		border: 1px solid #111;
+		float: right;
+		padding: 0 20px;
+		line-height: 40px;
+		margin: 20px 38px 0 10px;
+	}
+
+	header .register-button {
+		text-align: center;
+		border: 1px solid #111;
+		float: right;
+		padding: 0 20px;
+		line-height: 40px;
+		margin: 20px 0 0 10px;
+	}
+
+	header .logout-button {
+		text-align: center;
+		border: 1px solid #111;
+		float: right;
+		padding: 0 20px;
+		line-height: 40px;
+		margin: 20px 38px 0 10px;
+	}
+}
+
+/* Main Content */
+
+.banner {
+	width: 100%;
+	height: calc(100vh - 80px);
+	background-image: url("images/banner.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+
+.banner-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.banner h2 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: #fff;
+	text-align: center;
+	font-weight: 900;
+	line-height: 70px;
+	text-shadow: 2px 2px 8px #111;
+}
+
+.banner h1 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #fff;
+	text-align: center;
+	font-weight: 100;
+	text-shadow: 2px 2px 8px #111;
+	line-height: 60px;
+}
+
+.homepage-boxes div {
+	margin: 16px 16px 0;
+	width: calc(100% - 32px);
+	height: 100px;
+	background-color: #f2f2f2;
+}
+
+.homepage-boxes div h3 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #111;
+	text-align: center;
+	font-weight: 600;
+	line-height: 100px;
+}
+
+/* Main Content Box + Form Layout */
+
+main ul {
+	margin-left: 3em;
+}
+
+main a {
+	color: #333;
+}
+
+h1 { 
+	font-family: 'Roboto', sans-serif;
+    font-size:4em; 
+    color: white; 
+    text-align: center; 
+    padding-top: 20px; 
+    text-shadow: 2px 2px 2px #000;
+}
+
+main {
+    min-height: 50vh; 
+    background-color: #fff; 
+    width: 80vw; 
+	display: block; 
+    margin: auto; 
+    color:#444;
+    overflow: hidden;
+}
+
+main h1 {
+    color: #666;
+}
+
+main h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+    font-size: 2em;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+.home {
+    padding: 5vw; 
+    width: 60vw;
+}
+
+p, li, h2 {
+    margin-bottom: 1em;
+}
+
+form select, form label, form input, form textarea {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+}
+form label {
+    clear: left;
+}
+textarea {
+    height: 100px;
+}
+form input[type="text"], form input[type="password"], textarea {
+    color: #999; 
+    font-family: verdana, sans-serif
+}
+input[type="submit"] {
+    clear: both; 
+    margin-left: 0; 
+    width: 220px;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
+
+form select {
+    width: 220px;
+}
+table {
+    width: 100%; 
+    margin-top: 20px;
+}
+
+
+/* Main Content Media */
+
+@media only screen and (min-width: 1000px) {
+
+	.container {
+		width: 70.8%;
+		margin: auto;
+	}
+
+	.banner {
+		width: 100%;
+		height: 500px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		display: table;
+	}
+	.banner h2 {
+		line-height: 0px;
+		margin-top: 30px;
+	}
+
+	.banner h1 {
+		line-height: 0px;
+		margin-top: 0px;
+	}
+
+	.homepage-boxes {
+		overflow: hidden;
+	}
+
+	.homepage-boxes div {
+		margin: 20px 10px 0;
+		height: 230px;
+		background-color: #f2f2f2;
+		float: left;
+	}
+
+	main {
+		box-shadow: 0px 0px 10px #888; 
+	}
+
+	.boxlink-square {
+		width: calc(25% - 20px) !important;
+	}
+
+	.boxlink-rectangle {
+		width: calc(50% - 20px) !important;
+	}
+
+	.homepage-boxes div h3 {
+		line-height: 230px;
+	}
+
+    input[type="submit"] {
+        margin-left: 220px; 
+    }
+
+	
+}
+
+/* Footer */
+
+footer {
+	width: calc(100% - 80px);
+	padding: 40px 40px;
+	background-color: #111;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+footer ul {
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+}
+
+footer ul li {
+	display: block;
+	list-style: none;
+}
+
+footer ul li a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	line-height: 40px;
+}
+
+.footer-links2 {
+	display: none;
+}
+
+.social-media {
+	width: 50px;
+	float: right;
+}
+
+.social-media img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* Footer Media */
+
+@media only screen and (min-width: 1000px) {
+
+	.footer-links2 {
+		display: block;
+	}
+
+	footer ul {
+		padding-right: 30px; 
+	}
+
+	footer ul li p {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: #fff;
+		line-height: 20px;
+	}
+
+	footer ul li a {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: #fff;
+		line-height: 20px;
+	}
+	
+}
+
+/* HTML Forms */
+
+.admin-links li a {
+	font-family: 'Roboto', sans-serif;
+	color: #111;
+	font-size: 18px;
+}
